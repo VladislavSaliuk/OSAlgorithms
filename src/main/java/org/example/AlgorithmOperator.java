@@ -1,9 +1,15 @@
 package org.example;
 
+import org.example.algorithms.Algorithm;
+import org.example.algorithms.RoundRobin;
+
 import java.util.Scanner;
 
-public class AlgorithmOperator {
+public class AlgorithmOperator implements Algorithm {
 
+    private RoundRobin roundRobin;
+
+    @Override
     public void start(){
         int choiseNumber;
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +20,8 @@ public class AlgorithmOperator {
             switch (choiseNumber) {
                 case 1:
                     System.out.println("Round Robin scheduling algorithm");
+                    roundRobin = new RoundRobin();
+                    roundRobin.start();
                     break;
                 case 2:
                     System.out.println("SRT algorithm");
