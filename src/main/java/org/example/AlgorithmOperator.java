@@ -2,13 +2,13 @@ package org.example;
 
 import org.example.algorithms.Algorithm;
 import org.example.algorithms.RoundRobin;
+import org.example.algorithms.ShortestRemainingTime;
 
 import java.util.Scanner;
 
 public class AlgorithmOperator implements Algorithm {
-
     private RoundRobin roundRobin;
-
+    private ShortestRemainingTime shortestRemainingTime;
     @Override
     public void start(){
         int choiseNumber;
@@ -24,7 +24,9 @@ public class AlgorithmOperator implements Algorithm {
                     roundRobin.start();
                     break;
                 case 2:
-                    System.out.println("SRT algorithm");
+                    System.out.println("Shortest remaining time algorithm");
+                    shortestRemainingTime = new ShortestRemainingTime();
+                    shortestRemainingTime.start();
                     break;
                 case 3:
                     System.out.println("BANKER algorithm");

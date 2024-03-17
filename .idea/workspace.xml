@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3984cf43-1b84-4639-b081-d30e9499a3e4" name="Changes" comment="Adding Algorithm operator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/RoundRobin.java" afterDir="false" />
+    <list default="true" id="3984cf43-1b84-4639-b081-d30e9499a3e4" name="Changes" comment="Implementing Round Robin algorithm">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/ShortestRemainingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AlgorithmOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AlgorithmOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithms/RoundRobin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/RoundRobin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,7 +50,9 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OSAlgorithms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1710597783711</updated>
       <workItem from="1710597785270" duration="68000" />
-      <workItem from="1710602959423" duration="5852000" />
+      <workItem from="1710602959423" duration="7143000" />
+      <workItem from="1710664359673" duration="46000" />
+      <workItem from="1710701335588" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -84,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710608076002</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementing Round Robin algorithm">
+      <option name="closed" value="true" />
+      <created>1710613584917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710613584917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +119,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Adding Algorithm operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Algorithm operator" />
+    <MESSAGE value="Implementing Round Robin algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Round Robin algorithm" />
   </component>
 </project>

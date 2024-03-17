@@ -6,7 +6,7 @@ public class RoundRobin implements Algorithm {
     private int processNumber;
     private int quantumNumber;
     private int[] burstTimes;
-    private int[] waitTimes;
+    private int[] waitingTimes;
     private int[] turnaroundTimes;
     private Scanner scanner;
 
@@ -16,7 +16,7 @@ public class RoundRobin implements Algorithm {
         processNumber = scanner.nextInt();
 
         burstTimes = new int[processNumber];
-        waitTimes = new int[processNumber];
+        waitingTimes = new int[processNumber];
 
         for (int i = 0; i < burstTimes.length; i++) {
             System.out.print("Enter the burst time for P" + (i + 1) + " : ");
@@ -37,14 +37,14 @@ public class RoundRobin implements Algorithm {
                     if (remainingBurstTimes[i] > quantumNumber) {
                         for (int j = 0; j < processNumber; j++) {
                             if (j != i && remainingBurstTimes[j] > 0) {
-                                waitTimes[j] += quantumNumber;
+                                waitingTimes[j] += quantumNumber;
                             }
                         }
                         remainingBurstTimes[i] -= quantumNumber;
                     } else {
                         for (int j = 0; j < processNumber; j++) {
                             if (j != i && remainingBurstTimes[j] > 0) {
-                                waitTimes[j] += remainingBurstTimes[i];
+                                waitingTimes[j] += remainingBurstTimes[i];
                             }
                         }
                         remainingBurstTimes[i] = 0;
@@ -60,14 +60,16 @@ public class RoundRobin implements Algorithm {
 
         System.out.println("Process burst time, waiting time, and turnaround time:");
 
+        System.out.println();
+
         float totalWait = 0;
         float totalTurnaround = 0;
 
         turnaroundTimes = new int[processNumber];
         for (int i = 0; i < processNumber; i++) {
-            turnaroundTimes[i] = burstTimes[i] + waitTimes[i];
-            System.out.printf("P%d - %10d %10d %10d\n", (i + 1), burstTimes[i], waitTimes[i], turnaroundTimes[i]);
-            totalWait += waitTimes[i];
+            turnaroundTimes[i] = burstTimes[i] + waitingTimes[i];
+            System.out.printf("P%d - %10d %10d %10d\n", (i + 1), burstTimes[i], waitingTimes[i], turnaroundTimes[i]);
+            totalWait += waitingTimes[i];
             totalTurnaround += turnaroundTimes[i];
         }
 
