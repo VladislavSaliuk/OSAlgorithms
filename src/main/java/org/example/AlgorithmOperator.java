@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.algorithms.Algorithm;
-import org.example.algorithms.BankerAlgoritmh;
-import org.example.algorithms.RoundRobin;
-import org.example.algorithms.ShortestRemainingTime;
+import org.example.algorithms.*;
 
 import java.util.Scanner;
 
@@ -11,6 +8,7 @@ public class AlgorithmOperator implements Algorithm {
     private RoundRobin roundRobin;
     private ShortestRemainingTime shortestRemainingTime;
     private BankerAlgoritmh bankerAlgoritmh;
+    private OstrickAlgorithm ostrickAlgorithm;
     @Override
     public void start(){
         int choiseNumber;
@@ -37,6 +35,8 @@ public class AlgorithmOperator implements Algorithm {
                     break;
                 case 4:
                     System.out.println("STRAUSS algorithm");
+                    ostrickAlgorithm = new OstrickAlgorithm();
+                    ostrickAlgorithm.start();
                     break;
                 case 5:
                     break;

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3984cf43-1b84-4639-b081-d30e9499a3e4" name="Changes" comment="Implementing Shortest remaining time algorithm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/BankerAlgoritmh.java" afterDir="false" />
+    <list default="true" id="3984cf43-1b84-4639-b081-d30e9499a3e4" name="Changes" comment="Implementing Bankers algorithm :)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/OstrickAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AlgorithmOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AlgorithmOperator.java" afterDir="false" />
     </list>
@@ -92,7 +92,7 @@
       <workItem from="1710701335588" duration="2932000" />
       <workItem from="1710706132409" duration="22000" />
       <workItem from="1710853545678" duration="893000" />
-      <workItem from="1710857609365" duration="3644000" />
+      <workItem from="1710857609365" duration="4375000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -126,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710704002060</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementing Bankers algorithm :)">
+      <option name="closed" value="true" />
+      <created>1710861528873</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710861528874</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +157,7 @@
     <MESSAGE value="Adding Algorithm operator" />
     <MESSAGE value="Implementing Round Robin algorithm" />
     <MESSAGE value="Implementing Shortest remaining time algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Shortest remaining time algorithm" />
+    <MESSAGE value="Implementing Bankers algorithm :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Bankers algorithm :)" />
   </component>
 </project>
