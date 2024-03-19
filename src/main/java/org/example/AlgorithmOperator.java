@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.algorithms.Algorithm;
+import org.example.algorithms.BankerAlgoritmh;
 import org.example.algorithms.RoundRobin;
 import org.example.algorithms.ShortestRemainingTime;
 
@@ -9,6 +10,7 @@ import java.util.Scanner;
 public class AlgorithmOperator implements Algorithm {
     private RoundRobin roundRobin;
     private ShortestRemainingTime shortestRemainingTime;
+    private BankerAlgoritmh bankerAlgoritmh;
     @Override
     public void start(){
         int choiseNumber;
@@ -30,6 +32,8 @@ public class AlgorithmOperator implements Algorithm {
                     break;
                 case 3:
                     System.out.println("BANKER algorithm");
+                    bankerAlgoritmh = new BankerAlgoritmh();
+                    bankerAlgoritmh.start();
                     break;
                 case 4:
                     System.out.println("STRAUSS algorithm");
